@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  color: white;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: black;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* Dos columnas */
+}
+.modulos {
+  background-color: #d3d3da;
+  color: black;
+  margin: 0px;
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.modulo__text {
+  margin-bottom: 0px;
+}
+.description__column {
+  flex: 1.5;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.description {
+  background-color: #443e60;
+  margin: 0px;
+  padding: 10px;
+}
+
+.description__title {
+  margin-top: 0px;
+}
+.description__text {
+  margin-bottom: 0px;
+}
+
+.description__text-1 {
+  background-color: #2e2555;
+}
+.objetivos {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.documentos {
+  background-color: #443e60;
+  padding: 10px;
+}
+.certificacion {
+  background-color: #2e2555;
+  padding: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #3db559;
+  color: white;
+}
+
+.footer__content {
+  flex-direction: column;
+}
+
+.footer__text {
+  margin: 0px;
+}
+.footer__img {
+  max-width: 100%; /* Ajusta el tamaño del logo */
+  width: 30px;
+  height: 30px;
+}
