@@ -1,87 +1,190 @@
+/* Configuración general */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.6;
   margin: 0;
   color: white;
+  background-color: #2e2555; /* Fondo más oscuro para mayor contraste */
 }
+
+/* Estructura de página */
 .page {
   display: flex;
   flex-direction: column;
 }
 
+/* Configuración del header */
 .header {
-  color: black;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
+
+.header__content {
+  position: relative;
+  width: 100%;
+}
+
+.header__img {
+  width: 100%;
+  height: auto;
+  display: block; /* Asegura que la imagen no tenga espacio extra */
+}
+
+.header__subtitle {
+  position: absolute;
+  bottom: 20px; /* Separación desde la parte inferior */
+  left: 20px; /* Separación desde el lado izquierdo */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Fondo semitransparente para legibilidad */
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1; /* Para asegurar que esté por encima de la imagen */
+}
+
+.header__title {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Main */
 .main {
   display: grid;
-  grid-template-columns: 1fr 1.5fr; /* Dos columnas */
+  grid-template-columns: 1.2fr 1.5fr; /* Dos columnas */
+  gap: 20px;
+  padding: 20px;
 }
+
 .modulos {
   background-color: #d3d3da;
   color: black;
-  margin: 0px;
-  flex: 1;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .modulo__text {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
+
+/* Descripción */
 .description__column {
-  flex: 1.5;
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 .description {
   background-color: #443e60;
-  margin: 0px;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
 }
 
 .description__title {
-  margin-top: 0px;
+  margin-top: 0;
+  padding: 10px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #d3d3da;
 }
-.description__text {
-  margin-bottom: 0px;
+
+.description__text,
+.description__text-1,
+.description__text-2 {
+  padding: 10px;
+  color: white;
 }
 
 .description__text-1 {
   background-color: #2e2555;
+  border-radius: 8px;
 }
+
+.description__text-2 {
+  background-color: #443e60;
+  border-radius: 8px;
+}
+
+/* Objetivos */
 .objetivos {
   background-color: white;
   color: black;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 8px;
 }
 
+.objetivos__title {
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.objetivos__text {
+  margin: 10px;
+}
+
+/* Documentos */
 .documentos {
   background-color: #443e60;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
 }
+
+.documentos__title {
+  margin: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Certificación */
 .certificacion {
   background-color: #2e2555;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  color: white;
 }
+
+/* Footer */
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
   background-color: #3db559;
   color: white;
 }
 
 .footer__content {
+  display: flex;
   flex-direction: column;
 }
 
 .footer__text {
-  margin: 0px;
+  margin: 0;
 }
+
+.footer__text a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 .footer__img {
-  max-width: 100%; /* Ajusta el tamaño del logo */
-  width: 30px;
-  height: 30px;
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
 }
